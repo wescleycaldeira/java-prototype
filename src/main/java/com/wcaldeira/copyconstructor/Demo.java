@@ -11,6 +11,12 @@ public class Demo {
 
         System.out.println(john);
         System.out.println(chris);
+
+        System.out.println("----------------");
+
+        Employee employeeFactory = Employee.newInstance(john);
+        employeeFactory.name = "Factory";
+        System.out.println(employeeFactory);
     }
 
 }

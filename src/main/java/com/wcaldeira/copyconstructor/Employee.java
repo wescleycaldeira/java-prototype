@@ -15,6 +15,10 @@ public class Employee {
         address = new Address(other.address);
     }
 
+    public static Employee newInstance(Employee other){
+        return new Employee(other.name, other.address);
+    }
+
     @Override
     public String toString() {
         return "Employee{" +

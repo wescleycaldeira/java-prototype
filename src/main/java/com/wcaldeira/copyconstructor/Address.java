@@ -15,6 +15,10 @@ public class Address {
         this(other.streetAddress, other.city, other.country);
     }
 
+    public static Address newInstance(Address other){
+        return new Address(other.streetAddress, other.city, other.country);
+    }
+
     @Override
     public String toString() {
         return "Address{" +
